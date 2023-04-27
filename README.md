@@ -189,13 +189,13 @@ I would like to thank Microverse team for the opportunity
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 
-- **[Question_1]**
+- **[Who are you?]**
 
-  - [Answer_1]
+  - [My name is Abdul and this is my portfolio as a software developer. Here, you'll find some of the projects I've worked on that showcase my skills in various areas of development.]
 
-- **[Question_2]**
+- **[Tell me about tour self?]**
 
-  - [Answer_2]
+  - [I’m a Software Developer, I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
