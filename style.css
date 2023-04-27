@@ -64,10 +64,6 @@ body {
   font-weight: 700;
 }
 
-/* .social-icons span .image-bgc {
-  background: url('images/Illustration@3x.png') no-repeat center /center cover;
-} */
-
 .details p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -76,7 +72,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.social-icons {
+.social-icons ul {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -86,10 +82,14 @@ body {
   position: relative;
 }
 
-.social-icons img {
+.social-icons ul li i {
   width: 20px;
   height: 1.2rem;
   margin-right: 1.5rem;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .illustration img {
