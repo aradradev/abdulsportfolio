@@ -71,7 +71,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.social-icons ul {
+.social-icons {
   display: flex;
   align-items: flex-start;
 }
@@ -96,8 +96,4 @@ body {
 a {
   color: var(--White-color);
   text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
 }
