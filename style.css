@@ -357,6 +357,7 @@ button {
   outline: none;
   border: none;
   margin-bottom: 0.5rem;
+  margin: 0.5rem;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.6;
@@ -374,6 +375,7 @@ button {
 .form-input textarea {
   border: none;
   outline: none;
+  margin: 0.2rem;
   padding: 0.5rem;
   font-weight: 400;
   font-size: 0.9em;
@@ -420,7 +422,7 @@ button {
   font-size: 1.5rem;
 }
 
-.line-footer {
+.line-foot {
   padding-bottom: 3rem;
   margin: 4.5rem;
   border-bottom: 5px solid hsl(212, 40%, 8%);
