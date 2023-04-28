@@ -11,13 +11,13 @@
   --Button-color-BG: rgba(255, 255, 255, 0.24);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .hiden {
@@ -343,8 +343,8 @@ button:hover,
   align-items: center;
 }
 
-.title-skill h5 {
-  margin: 1.2rem 1rem;
+.title-skill h4 {
+  margin: 1.2rem 0;
   font-family: 'Meera Inimai', sans-serif;
   font-weight: 700;
   font-size: 2rem;
