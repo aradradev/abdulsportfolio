@@ -232,10 +232,11 @@ a {
 
 button {
   padding: 0.8rem 1.6rem;
-  background-color: hsl(15, 33%, 98%);
-  color: var(--Orange-color);
+  background-color: var(--Orange-color);
+  color: var(--White-color);
   font-size: 1.1rem;
   line-height: 1.4;
+  font-weight: 700;
   display: flex;
   align-items: flex-start;
   letter-spacing: 0.03em;
@@ -245,9 +246,12 @@ button {
 }
 
 .btn {
-  background-color: hsl(40, 100%, 94%);
-  color: var(--Orange-color);
+  background-color: var(--Orange-color);
+  color: var(--White-color);
   font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,8 +264,20 @@ button {
 
 button:hover,
 .btn:hover {
-  color: var(--White-color);
-  background: var(--Orange-color);
+  color: var(--Orange-color);
+  background: hsl(40, 100%, 94%);
+  border: 1px solid var(--Orange-color);
+}
+
+button:disabled,
+.btn:disabled {
+  background: hsl(15, 15%, 95%);
+  color: var(--Dark-color);
+}
+
+button:active,
+.btn:active {
+  color: hsl(15, 15%, 95%);
 }
 
 .cards-container {
@@ -377,7 +393,8 @@ button:hover,
 .form-input input {
   outline: none;
   border: none;
-  margin: 0.5rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.6;
