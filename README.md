@@ -2,7 +2,7 @@
 
 <div align="center">
  
-  <h3><b>Abdul's Portfolio</b></h3>
+  <h3><b>Abdul's Portfolio Mobile</b></h3>
 
 </div>
 
