@@ -204,9 +204,7 @@ a {
 }
 
 .row-card-skills ul {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
+  /* float: left; */
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.3;
@@ -216,6 +214,7 @@ a {
 }
 
 .row-card-skills ul li {
+  float: left;
   padding: 0.7rem;
   margin: 1rem;
   text-align: center;
