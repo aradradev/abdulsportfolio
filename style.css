@@ -216,7 +216,7 @@ a {
 .row-card-skills ul li {
   float: left;
   padding: 0.7rem;
-  margin: 0.5rem;
+  margin: 0.3rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.24);
   transition: 0.7s;
