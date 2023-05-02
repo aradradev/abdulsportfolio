@@ -20,17 +20,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.hidden {
-  display: none;
-}
-
 body {
-  width: 100%;
-  height: 100vh;
-  font-size: 20px;
+  width: 100vw;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  font-size: 17px;
   color: var(--Text-color);
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
 }
 
 .navbar {
@@ -115,7 +121,7 @@ a {
 
 .main {
   background-color: var(--Background-main);
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   padding: 3rem 0;
 }
@@ -187,9 +193,9 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.3;
   margin: 0 2rem;
   letter-spacing: 0.05em;
 }
@@ -197,7 +203,7 @@ a {
 .title-skill p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.9;
   display: flex;
   align-items: center;
@@ -217,7 +223,8 @@ a {
 
 .row-card-skills ul li {
   padding: 0.5rem;
-  margin: 0.8rem;
+  margin: 0 0.8rem;
+  margin-top: 5rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.24);
   transition: 0.7s;
@@ -256,9 +263,9 @@ button {
   align-items: center;
   justify-content: center;
   border: none;
-  min-width: 82.2%;
+  min-width: 100%;
   height: 48px;
-  margin: 0 2rem 2rem;
+  margin: 7rem 2rem 0;
   transition: 0.7s;
 }
 
@@ -283,7 +290,7 @@ button:active,
 .cards-container {
   margin: 2rem 2rem 0;
   min-height: 50vh;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Img\ Placeholder@2x.png) no-repeat center /contain;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Img\ Placeholder@2x.png) no-repeat center center /cover;
 }
 
 .card-container {
@@ -381,7 +388,7 @@ button:active,
 .form-title {
   width: 100%;
   color: var(--Text-color-main);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.37;
   display: flex;
@@ -422,7 +429,7 @@ input[type=email] {
 }
 
 .btn-form {
-  margin: 1.5rem 0 4rem 6rem;
+  margin: 1.5rem 0 4rem 5rem;
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -458,10 +465,49 @@ input[type=email] {
 }
 
 .line-foot {
-  padding-bottom: 3rem;
-  margin: 4.5rem;
-  border-bottom: 5px solid hsl(212, 40%, 8%);
-  border-radius: 10px;
+  margin: 3rem 4.5rem;
+  border-bottom: 4px solid hsl(212, 40%, 8%);
+  border-radius: 0 10px;
   text-align: center;
   width: 60%;
+}
+
+/* Media query for the mobile version max-width:374 */
+
+@media screen and (max-width: 374px) {
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .form-title {
+    font-size: 1.1rem;
+  }
+
+  .btn-form {
+    margin: 1.1rem;
+  }
+
+  .line-foot {
+    margin-bottom: 1.2rem;
+  }
+
+  .top-title {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+  .title-skill p {
+    font-size: 1.1rem;
+  }
+
+  .row-skills li {
+    margin-right: 0.7rem;
+    text-align: center;
+  }
+
+  .cards {
+    margin: 3rem;
+  }
 }
