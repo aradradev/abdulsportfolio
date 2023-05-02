@@ -18,11 +18,11 @@
                 <nav>
                     <a href=""><img src="images/Icon - Menu.png" alt="icon menu"></a>
                 </nav>
-                <div class="navlink hiden">
-                    <a href="">Portfolio</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                    <a href=""><img src="images/Icon - Mail.png" alt="mail icon"></a>
+                <div class="navlink hidden">
+                    <a href="#">Portfolio</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#"><img src="images/Icon - Mail.png" alt="mail icon"></a>
                 </div>
             </div>
             
@@ -180,7 +180,7 @@
                 <button type="submit">Get my resume</button>
                 <div class="illustration-about">
                     <img src="images/illustration-about-me-mobile@2x.png" class="mobile" alt="Illustration about me" width="240px">
-                    <img src="images/illustration-about-me-mobile@2x.png" alt="Illustration about me" class="hiden" width="350px">
+                    <img src="images/illustration-about-me-mobile@2x.png" alt="Illustration about me" class="hidden" width="350px">
                 </div>
             </div>
             <hr class="line-about">
@@ -231,20 +231,20 @@
             <div class="form-title">
                 <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
-            <form action="">
+            <form action="https://formspree.io/f/mgebdajq" method="POST">
                 <div class="form-input">
                     <label for="name"></label>
-                    <input type="text" id="name" placeholder="Full name">
+                    <input type="text" name="name" id="name" placeholder="Full name" maxlength="30" required>
                     <div class="line-form"></div>
                 </div>
                 <div class="form-input">
                     <label for="email"></label>
-                    <input type="email" id="name" placeholder="Email address">
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
                     <div class="line-form"></div>
                 </div>
                 <div class="form-input">
                     <label for="comment"></label>
-                    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Write me something..."></textarea>
+                    <textarea name="message" maxlength="500" required id="comment"  cols="30" rows="5" placeholder="Write me something..."></textarea>
                 </div>
                 <button class="btn-form" type="submit">Get in touch</button>
             </form>
