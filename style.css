@@ -193,7 +193,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.3;
   margin: 0 2rem;
@@ -289,8 +289,8 @@ button:active,
 
 .cards-container {
   margin: 2rem 2rem 0;
-  min-height: 50vh;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Img\ Placeholder@2x.png) no-repeat center center /cover;
+  height: auto;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
 }
 
 .card-container {
@@ -305,7 +305,7 @@ button:active,
   margin: 5rem 2rem 2rem;
   font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -418,7 +418,7 @@ input[type=email] {
   border: none;
   outline: none;
   margin: 0.2rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.6;
@@ -536,5 +536,354 @@ input[type=email] {
 
   button {
     margin: 0 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 20px;
+  }
+
+  main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .icon {
+    margin: 0 2rem;
+  }
+
+  .navlink {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navlink a {
+    margin-right: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .navlink a i {
+    font-size: 1rem;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .base {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .title h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-top: 3rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .social-icons ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills-column li {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .social-icons ul li {
+    padding-top: 0.9rem;
+  }
+
+  .details h4 {
+    font-size: 2rem;
+    line-height: 1.37;
+  }
+
+  .details p {
+    max-width: 50%;
+    min-height: 70%;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .illustration img {
+    position: absolute;
+    min-width: 35%;
+    right: 0;
+    top: 85px;
+  }
+
+  .my-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-work h2 {
+    color: var(--Text-color-main);
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+
+  .line {
+    width: 50%;
+    margin: 2rem 1rem;
+  }
+
+  .cards {
+    min-width: 95%;
+  }
+
+  .card-container-row {
+    margin: 0 9rem;
+    min-width: 35%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .image-bg img {
+    width: 485px;
+  }
+
+  .text-container-row {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .text-container-row h2 {
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+
+  .text-container-row p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0 7rem 0 0;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 1rem auto;
+    width: 50%;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .projects-1 {
+    background: url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9rem;
+    height: 435px;
+    width: 369px;
+  }
+
+  .projects-2 {
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url('images/Img\ Placeholder\ \(3\).png') no-repeat center center /cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9rem;
+    height: 435px;
+    width: 369px;
+  }
+
+  .projects-3 {
+    background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url('images/Img\ Placeholder\ \(4\).png') no-repeat center center /cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9rem;
+    height: 435px;
+    width: 369px;
+  }
+
+  .projects-4 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9rem;
+    height: 435px;
+    width: 369px;
+  }
+
+  .title-card {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .desc p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-project {
+    position: relative;
+    top: 193px;
+    right: 0;
+    min-width: 100%;
+
+    /* margin: 2rem; */
+    text-align: center;
+  }
+
+  .about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin-top: 5rem;
+    padding: 8rem 10rem 0;
+    max-height: 100vh;
+  }
+
+  .big-title-about {
+    margin: 2rem 0;
+    font-size: 4.5;
+    line-height: 1.13;
+    width: 566px;
+    height: 78px;
+  }
+
+  .illustration-about img {
+    position: absolute;
+    min-width: 35%;
+    right: 0;
+    top: 130px;
+  }
+
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .columns .skills-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12rem;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 0 10rem;
+  }
+
+  .form-title h2 {
+    width: 455px;
+    height: 256px;
+    color: hsl(0, 0%, 15%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 5.5rem;
+    text-align: start;
+  }
+
+  .fullname {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+  }
+
+  input[type=text] {
+    max-width: 20%;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  input[type=email] {
+    padding: 1rem;
+    min-width: 100%;
+  }
+
+  .form-input textarea {
+    min-width: 100%;
+    padding: 1rem;
+  }
+
+  .btn-form-desktop {
+    margin: 0.9rem 0;
+  }
+
+  .footer-page {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons-footer {
+    text-align: center;
+  }
+
+  .line-foot {
+    display: none;
   }
 }
