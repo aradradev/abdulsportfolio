@@ -301,6 +301,16 @@ button:active,
   flex-direction: column;
   margin-top: 2rem;
 }
+.projects-1:hover > .btn-project{
+  display: block;
+      position: relative;
+    top: 193px;
+    right: 0;
+}
+
+.projects-1:hover > .cards-container-hidden{
+  display: none;
+}
 
 .title-card {
   margin: 5rem 2rem 2rem;
@@ -725,6 +735,7 @@ input[type=email] {
   .projects-1 {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-right: 0.9rem;
@@ -785,10 +796,11 @@ input[type=email] {
   }
 
   .btn-project {
-    position: relative;
+    /* position: relative;
     top: 193px;
-    right: 0;
+    right: 0; */
     min-width: 100%;
+    display: none;
   }
 
   .about {
