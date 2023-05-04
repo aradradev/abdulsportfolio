@@ -30,7 +30,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-PROJECT DESCRIPTION
+
 
 # 📖 [Abdul's Portfolio] <a name="setting Up a linters"></a>
 
@@ -55,7 +55,7 @@ PROJECT DESCRIPTION
   </ul>
 </details>
 
-Features
+
 
 ### Key Features <a name="key-features"></a>
 
@@ -69,9 +69,6 @@ added linters.yml
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-LIVE DEMO
-
-GETTING STARTED
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -172,13 +169,12 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-SUPPORT
 
 ## ⭐️ Show your support <a name="support"></a>
 
 
 
-If you like this project, please give me a five stars
+If you like this project, please give me a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,7 +201,6 @@ I would like to thank Microverse team for the opportunity
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-LICENSE
 
 ## 📝 License <a name="license"></a>
 
