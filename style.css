@@ -301,14 +301,14 @@ button:active,
   flex-direction: column;
   margin-top: 2rem;
 }
-.projects-1:hover > .btn-project{
+.active:hover > .btn-project{
   display: block;
       position: relative;
     top: 193px;
     right: 0;
 }
 
-.projects-1:hover > .cards-container-hidden{
+.active:hover > .cards-container-hidden{
   display: none;
 }
 
@@ -741,6 +741,11 @@ input[type=email] {
     margin-right: 0.9rem;
     height: 435px;
     width: 369px;
+  }
+
+  .projects-1:hover{
+    background:  url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
+    
   }
   
   
