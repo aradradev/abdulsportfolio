@@ -292,6 +292,7 @@ button:active,
 .cards-container {
   margin: 1rem;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
+
   /* padding-top: 2rem; */
 }
 
@@ -918,7 +919,7 @@ input[type=email] {
     padding: 4rem 8rem 14rem;
   }
 
-  .title-about{
+  .title-about {
     padding-bottom: 10rem;
   }
 
