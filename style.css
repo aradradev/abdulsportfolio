@@ -292,7 +292,7 @@ button:active,
 .cards-container {
   margin: 1rem;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .card-container {
@@ -306,9 +306,8 @@ button:active,
 
 .active:hover > .btn-project {
   display: block;
-  position: relative;
-  top: 193px;
-  right: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .active:hover > .cards-container-hidden {
@@ -317,6 +316,7 @@ button:active,
 
 .title-card {
   margin: 0 1rem;
+  margin-top: auto;
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 2rem;
@@ -328,10 +328,6 @@ button:active,
   margin-top: 3rem;
   padding-bottom: 4rem;
   max-height: 91vh;
-}
-
-.big-title-about {
-  margin: 2rem 0;
 }
 
 .illustration-about img {
@@ -729,11 +725,9 @@ input[type=email] {
   }
 
   .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 11rem;
-    gap: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
   }
 
   .card h2 {
@@ -742,13 +736,12 @@ input[type=email] {
 
   .projects-1 {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('images/Img\ Placeholder\ \(2\).png') no-repeat center center /cover;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 435px;
     transition: 0.9s;
     margin: 0 0.9rem;
+    position: relative;
   }
 
   .projects-1:hover {
@@ -757,22 +750,22 @@ input[type=email] {
 
   .projects-2 {
     background: url('images/Img\ Placeholder\ \(3\).png') no-repeat center center /cover;
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 435px;
     transition: 0.9s;
     margin: 0 0.9rem;
+    position: relative;
   }
 
   .projects-3 {
     background: url('images/Img\ Placeholder\ \(4\).png') no-repeat center center /cover;
-    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0.9rem;
     height: 435px;
     transition: 0.9s;
+    margin: 0 0.9rem;
+    position: relative;
   }
 
   .title-card {
@@ -781,10 +774,6 @@ input[type=email] {
     font-size: 2rem;
     line-height: 1.3;
     opacity: 1;
-  }
-
-  span {
-    padding-bottom: 2rem;
   }
 
   .desc p {
@@ -927,6 +916,10 @@ input[type=email] {
 
   .about {
     padding: 4rem 8rem 14rem;
+  }
+
+  .title-about{
+    padding-bottom: 10rem;
   }
 
   .columns {
