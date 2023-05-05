@@ -548,10 +548,6 @@ input[type=email] {
     font-size: 0.8rem;
     margin: 0 1.2rem;
   }
-
-  button {
-    margin: 0 1.2rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
