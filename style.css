@@ -578,8 +578,7 @@ input[type=email] {
     font-size: 1.25rem;
     line-height: 1;
     font-weight: 700;
-    animation-name: rotate;
-    animation-duration: 3s;
+    animation: rotate 3s;
   }
 
   @keyframes rotate {
