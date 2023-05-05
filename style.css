@@ -509,10 +509,6 @@ input[type=email] {
     font-size: 1.1rem;
   }
 
-  .btn-form {
-    margin: 1.1rem;
-  }
-
   .line-foot {
     margin-bottom: 1.2rem;
   }
@@ -546,6 +542,14 @@ input[type=email] {
 
   .card p {
     font-size: 0.8rem;
+    margin: 0 1.2rem;
+  }
+
+  .row-skills ul {
+    padding: 10px 1.2rem;
+  }
+
+  .btn-container {
     margin: 0 1.2rem;
   }
 }
