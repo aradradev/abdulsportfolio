@@ -783,6 +783,10 @@ input[type=email] {
     opacity: 1;
   }
 
+  span{
+    padding-bottom: 2rem;
+  }
+
   .desc p {
     display: flex;
     align-items: flex-start;
@@ -793,8 +797,8 @@ input[type=email] {
     letter-spacing: 0.05em;
   }
 
-  .projects-3 .website {
-    font-size: 2rem;
+  .row-card-skills .unique{
+    margin-top: 4rem;
   }
 
   .btn-project {
@@ -934,10 +938,6 @@ input[type=email] {
   }
 
   .projects-2 {
-    margin: 0 2rem;
-  }
-
-  .projects-3 {
     margin: 0 2rem;
   }
 
