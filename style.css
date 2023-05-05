@@ -349,12 +349,17 @@ button:active,
   width: 85%;
 }
 
+.title-about {
+  border: none;
+}
+
 .columns {
   background: var(--Black-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -1rem;
 }
 
 .skills-column ul {
@@ -464,13 +469,13 @@ input[type=email] {
 }
 
 .social-icons-footer ul {
-  margin: 3rem auto;
+  margin: 1rem auto;
   color: var(--Black-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 
   /* margin-left: 4rem; */
 }
@@ -556,10 +561,8 @@ input[type=email] {
 
 @media screen and (min-width: 768px) {
   body {
-    max-width: 100vw;
-    min-height: 100vh;
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   main {
@@ -664,7 +667,7 @@ input[type=email] {
     position: absolute;
     min-width: 33%;
     right: 0;
-    top: 85px;
+    top: 133px;
   }
 
   .my-work {
@@ -686,11 +689,13 @@ input[type=email] {
   }
 
   .card-container-row {
-    margin: 3rem 5rem 0;
+    margin: 2rem 1rem 0;
     min-width: 50%;
     min-height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
     gap: 0.8rem;
   }
 
@@ -714,23 +719,25 @@ input[type=email] {
   .text-container-row p {
     font-size: 1.1rem;
     line-height: 1.4;
-    margin: 0 7rem 0 0;
+    margin: 0;
   }
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-content: center;
-    margin: 1rem auto;
-    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 8.938rem 8.125rem 8.938rem;
   }
 
   .card-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 13rem;
+    padding-top: 11rem;
+    gap: 0;
+  }
+
+  .card h2 {
+    margin: 0 0 1.3rem;
   }
 
   .projects-1 {
@@ -739,10 +746,9 @@ input[type=email] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 0.9rem;
     height: 435px;
-    width: 369px;
     transition: 0.9s;
+    margin: 0 0.9rem;
   }
 
   .projects-1:hover {
@@ -754,10 +760,9 @@ input[type=email] {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.9rem;
     height: 435px;
-    width: 369px;
     transition: 0.9s;
+    margin: 0 0.9rem;
   }
 
   .projects-3 {
@@ -765,9 +770,8 @@ input[type=email] {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.9rem;
+    margin: 0 0.9rem;
     height: 435px;
-    width: 369px;
     transition: 0.9s;
   }
 
@@ -789,8 +793,8 @@ input[type=email] {
     letter-spacing: 0.05em;
   }
 
-  .projects-3 .title-card {
-    min-height: 12.5vh;
+  .projects-3 .website {
+    font-size: 2rem;
   }
 
   .btn-project {
@@ -804,8 +808,17 @@ input[type=email] {
     justify-content: center;
     position: relative;
     margin-top: 5rem;
-    padding: min(12rem, 15rem);
+    padding: 4rem 8rem 13rem;
     max-height: 110vh;
+  }
+
+  .line-about {
+    display: none;
+  }
+
+  .title-about {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4rem;
   }
 
   .big-title-about {
@@ -828,6 +841,7 @@ input[type=email] {
     align-items: center;
     justify-content: space-around;
     margin-top: -1rem;
+    padding-top: 1rem;
   }
 
   .columns .skills-column {
@@ -848,10 +862,10 @@ input[type=email] {
     min-width: 455px;
     height: 256px;
     color: hsl(0, 0%, 15%);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 5.5rem;
+    margin: 0 2rem 5.5rem 0;
     text-align: start;
   }
 
@@ -890,9 +904,117 @@ input[type=email] {
 
   .social-icons-footer {
     text-align: center;
+    height: 75px;
   }
 
   .line-foot {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1581) and (max-width: 1180px) {
+  body {
+    font-size: 16px;
+  }
+
+  .columns .skills-column {
+    gap: 6rem;
+  }
+
+  .about {
+    padding: 4rem 8rem 14rem;
+  }
+
+  .columns {
+    padding-top: 2rem;
+  }
+
+  .projects-1 {
+    margin: 0 2rem;
+  }
+
+  .projects-2 {
+    margin: 0 2rem;
+  }
+
+  .projects-3 {
+    margin: 0 2rem;
+  }
+
+  .social-icons-footer {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1110px) {
+  body {
+    font-size: 15px;
+  }
+
+  .base {
+    padding: 1rem;
+  }
+
+  .title h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .columns .skills-column {
+    gap: 3rem;
+  }
+
+  .image-bg img {
+    width: 427px;
+  }
+
+  .text-container-row {
+    margin-bottom: 4.5rem;
+  }
+
+  .card h2 {
+    margin: 0 0 1.3rem;
+  }
+
+  .text-container-row p {
+    margin: 0;
+  }
+
+  .about {
+    padding: 7rem;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  .form-title h2 {
+    min-width: 260px;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .footer-page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-icons-footer {
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 967px) and (max-width: 994px) {
+  .about {
+    padding-bottom: 8rem;
   }
 }
