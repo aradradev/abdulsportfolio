@@ -6,7 +6,7 @@
   --White-color: hsl(0, 0%, 100%);
   --Orange-color: hsl(22, 100%, 48%);
   --Text-color: hsl(220, 16%, 96%);
-  --Background-main: hsl(0, 0%, 90%);
+  --Background-main: hsl(0, 0%, 100%);
   --Text-color-main: hsl(218, 76%, 15%);
   --Button-color-BG: rgba(255, 255, 255, 0.24);
 }
