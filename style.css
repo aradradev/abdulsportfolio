@@ -578,6 +578,34 @@ input[type=email] {
     font-size: 1.25rem;
     line-height: 1;
     font-weight: 700;
+    animation-name: rotate;
+    animation-duration: 3s;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    20% {
+      transform: rotate(45deg);
+    }
+  
+    40% {
+      transform: rotate(22.5deg);
+    }
+  
+    60% {
+      transform: rotate(-22.5deg);
+    }
+  
+    80% {
+      transform: rotate(-45deg);
+    }
+  
+    100% {
+      transform: rotate(-22.5deg);
+    }
   }
 
   .icon {
