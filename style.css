@@ -561,6 +561,10 @@ h1::after {
     font-size: 2.5rem;
   }
 
+  .illustration-about img {
+    top: 354px;
+  }
+
   .form-title {
     font-size: 1.1rem;
   }
