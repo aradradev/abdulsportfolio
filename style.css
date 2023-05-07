@@ -9,6 +9,7 @@
   --Background-main: hsl(0, 0%, 100%);
   --Text-color-main: hsl(218, 76%, 15%);
   --Button-color-BG: rgba(255, 255, 255, 0.24);
+  --typewriter: 3s;
 }
 
 * {
@@ -493,6 +494,55 @@ input[type=email] {
   margin: 0 auto;
 }
 
+h1 {
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+h1::before {
+  background-color: var(--Black-color);
+  animation: typewriter var(--typewriter) steps(10) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background-color: var(--Orange-color);
+  animation: typewriter var(--typewriter) steps(10) 1s forwards, blink 750ms steps(10) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 83%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background-color: transparent;
+  }
+}
+
+.details h4,
+.details p,
+.social-icons {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: appearing 2s ease calc(var(--typewriter) + 2s) forwards;
+}
+
+@keyframes appearing {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Media query for the mobile version max-width:374 */
 
 @media screen and (max-width: 374px) {
@@ -505,6 +555,10 @@ input[type=email] {
   main {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .big-title {
+    font-size: 2.5rem;
   }
 
   .form-title {
@@ -537,14 +591,23 @@ input[type=email] {
     justify-content: center;
   }
 
+  .text-container-row {
+    margin: 2rem 1.8rem;
+  }
+
   .card h2 {
     font-size: 1.7rem;
-    margin: 0.7rem 1.2rem;
+    margin: 0.7rem 1.3rem;
   }
 
   .card p {
-    font-size: 0.8rem;
-    margin: 0 1.2rem;
+    font-size: 0.9rem;
+    margin: 0 1.3rem;
+  }
+
+  .img-desktop img {
+    width: 70%;
+    margin-left: 58px;
   }
 
   .row-skills ul {
@@ -553,6 +616,41 @@ input[type=email] {
 
   .btn-container {
     margin: 0 1.2rem;
+  }
+
+  input[type=text],
+  input[type=email] {
+    min-width: 85%;
+  }
+
+  .form-input textarea {
+    min-width: 85%;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 75%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 324px) {
+  @keyframes typewriter {
+    to {
+      left: 83%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
   }
 }
 
@@ -578,33 +676,6 @@ input[type=email] {
     font-size: 1.25rem;
     line-height: 1;
     font-weight: 700;
-    animation: rotate 3s;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-  
-    20% {
-      transform: rotate(45deg);
-    }
-  
-    40% {
-      transform: rotate(22.5deg);
-    }
-  
-    60% {
-      transform: rotate(-22.5deg);
-    }
-  
-    80% {
-      transform: rotate(-45deg);
-    }
-  
-    100% {
-      transform: rotate(-22.5deg);
-    }
   }
 
   .icon {
@@ -930,6 +1001,18 @@ input[type=email] {
 
   .line-foot {
     display: none;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 35%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
   }
 }
 
