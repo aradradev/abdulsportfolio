@@ -254,6 +254,7 @@ button {
   gap: 0.5rem;
   border: none;
   transition: 0.7s;
+  cursor: pointer;
 }
 
 .btn {
@@ -636,24 +637,12 @@ h1::after {
       left: 75%;
     }
   }
-
-  @keyframes blink {
-    to {
-      background-color: transparent;
-    }
-  }
 }
 
 @media screen and (max-width: 324px) {
   @keyframes typewriter {
     to {
       left: 83%;
-    }
-  }
-
-  @keyframes blink {
-    to {
-      background-color: transparent;
     }
   }
 }
@@ -1012,15 +1001,9 @@ h1::after {
       left: 35%;
     }
   }
-
-  @keyframes blink {
-    to {
-      background-color: transparent;
-    }
-  }
 }
 
-@media screen and (min-width: 1581) and (max-width: 1180px) {
+@media screen and (max-width: 1581) and (min-width: 1180px) {
   body {
     font-size: 16px;
   }
@@ -1054,7 +1037,7 @@ h1::after {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1110px) {
+@media screen and (min-width: 768px) and (max-width: 1110px) {
   body {
     font-size: 15px;
   }
@@ -1118,6 +1101,12 @@ h1::after {
 
   .social-icons-footer {
     height: 95px;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 55%;
+    }
   }
 }
 

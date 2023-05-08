@@ -128,7 +128,7 @@ t> comming soon   :
 
 This is the live website mobile-version, if you like it give me a stars:
 
-https://abdulsportfolio.vercel.app/
+https://aradradev.github.io/abdulsportfolio/
 
 
 
