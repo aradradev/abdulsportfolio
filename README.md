@@ -130,6 +130,12 @@ This is the live website mobile-version, if you like it give me a stars:
 
 https://aradradev.github.io/abdulsportfolio/
 
+## Communicate technical concepts to non-technical people Loom video
+
+This is the live website mobile-version, if you like it give me a stars:
+
+https://www.loom.com/share/21149924104c45a68855e1dd445701c4
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
