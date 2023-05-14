@@ -700,7 +700,7 @@ h1::after {
   }
 
   .base {
-    padding: 3rem;
+    padding: 4rem 0;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -777,7 +777,7 @@ h1::after {
   }
 
   .card-container-row {
-    margin: 2rem 1rem 0;
+    margin: 2rem 8rem 0;
     min-width: 50%;
     min-height: auto;
     display: grid;
@@ -903,7 +903,7 @@ h1::after {
 
   .title-about {
     border-bottom: 2px solid #fff;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
   }
 
   .big-title-about {
