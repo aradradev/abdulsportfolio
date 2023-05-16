@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"> 
 </head>
 <body>
@@ -96,11 +97,47 @@
                                         <li>Ruby</li>
                                     </ul>
                                 </div>
-                                <button class="btn-container" type="submit">See project</button>
+                                <button data-modal-target="#modal" class="btn-container" type="submit">See project</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- ############ POPUP WINDOW START HERE -->
+
+                <div class="modal" id="modal">
+                    <div class="text-container-row">
+                        
+                        <div class="container-desk">
+                            <div class="modal-title">
+                                <h2>Multi-Post Stories</h2>
+                                <button data-close-button class="close-btn">&times;</button>
+                            </div>
+                            <div class="row-skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>Bootstrap</li>
+                                    <li>Ruby on Rails</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid-template">
+                            <a class="snap" href="#"><img src="images/Snapshoot Portfolio.png" alt="image popup"></a>
+                        <div class="grid">
+                            <div class="modal-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-container" type="submit">See Live <img src="images/Icon.png" alt="icon"></button>
+                                <button class="btn-container" type="submit">See Source <img src="images/Icon -GitHub.png" alt="icon github"></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+
+                <!-- ############ POPUP WINDOW END HERE -->
 
                 <!-- SECTION DESKTOP FOR PROJECTS GRID START HERE -->
 
@@ -440,5 +477,6 @@
 
     </main>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>
