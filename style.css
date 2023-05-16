@@ -68,12 +68,20 @@ main {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+a {
+  color: var(--White-color);
+  text-decoration: none;
+}
+
 nav a {
   transition: 0.5s;
 }
 
-.social-icons ul li a:hover,
 nav a:hover {
+  color: var(--Orange-color);
+}
+
+.social-icons ul li a:hover {
   color: var(--Orange-color);
 }
 
@@ -201,11 +209,6 @@ ul li {
   width: 150px;
   top: 364px;
   right: 0;
-}
-
-a {
-  color: var(--White-color);
-  text-decoration: none;
 }
 
 .main {
