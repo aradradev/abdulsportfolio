@@ -13,29 +13,40 @@
 
         <!-- TOPBAR START HERE -->
         <header>
-            <nav class="navbar">
+            <nav class="navbar" id="nav-bar">
                 <div class="logo">
                     <a href="https://aradradev.github.io/myportfolio/" rel="noopener noreferrer">Jalloh</a>
                 </div>
                 <div class="icon">
-                    <nav class="mobile">
-                        <a href=""><img src="images/Icon - Menu.png" alt="icon menu"></a>
+                    <nav class="mobile" id="hamburger">
+                        <!-- <a href=""><img src="images/Icon - Menu.png" alt="icon menu"></a> -->
+                        
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <a id="close-btn" href=""><i class="fas fa-times"></i></a>
+                        <div id="menu-link">
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </nav>
                     <div class="navlink hidden">
-                        <a href="#">Portfolio</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
                         <a href="mailto:abdoulramanediallo44@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 
             </nav>
         </header>
+        <div class="overlay"></div>
         <!-- TOPBAR END HERE -->
 
             <!-- SECTION BASE TITLE START HERE -->
 
-            <section class="base">
+            <section class="base" id="portfolio">
                 
                 <div class="title">
                     <h1 class="big-title">Hey There.<br> I’m Abdul.</h1>
@@ -315,7 +326,7 @@
             <!-- SECTION FOR THE MAIN END HERE -->
 
             <!-- SECTION ABOUT BASE START HERE -->
-            <section class="about base">
+            <section class="about base" id="about">
                 <div class="title title-about">
                     <h2 class="big-title big-title-about">About me</h2>
                     <div class="details details-about">
@@ -376,11 +387,11 @@
             <!-- COLUMNS SKILLS END HERE -->
 
             <!-- FORM SECTION START HERE -->
-            <section class="form">
+            <section class="form" id="contact">
                 <div class="form-title">
                     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                 </div>
-                <form action="https://formspree.io/f/mgebdajq" method="POST">
+                <form action="https://formspree.io/f/mbjebzjn" method="POST">
                     <div class="form-input">
                         <div class="fullname hidden">
                             <label for="fname"></label>
@@ -407,7 +418,7 @@
                         <label for="comment"></label>
                         <textarea name="message" maxlength="500" required id="comment"  cols="30" rows="5" placeholder="Write me something..."></textarea>
                     </div>
-                    <button class="btn-form btn-form-desktop" type="submit">Get in touch</button>
+                    <button type="submit" class="btn-form btn-form-desktop" >Get in touch</button>
                 </form>
             </section>
             <!-- FORM SECTION END HERE -->
@@ -427,7 +438,7 @@
             </footer>
             <!-- FOOTER SECTION END HERE -->
 
-        </main>
-
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

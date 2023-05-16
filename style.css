@@ -40,6 +40,92 @@ main {
   display: none;
 }
 
+#hamburger {
+  display: block;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+
+  --webkit-transition: all 0.3s eas-in-out;
+
+  transition: all 0.3s eas-in-out;
+  background-color: #fff;
+}
+
+#hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav a {
+  transition: 0.5s;
+}
+
+.social-icons ul li a:hover,
+nav a:hover {
+  color: var(--Orange-color);
+}
+
+#menu-link {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-color);
+  transition: top 1s ease;
+  display: none;
+  width: 100%;
+}
+
+#menu-link a {
+  margin: 2rem 0;
+  padding-right: 2rem;
+  width: 80%;
+  font-size: 2rem;
+  border-bottom: 1px solid hsl(15, 2%, 43%);
+}
+
+#close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  color: hsl(15, 2%, 43%);
+  z-index: 30;
+}
+
+#close-btn.active {
+  display: block;
+  top: 20px;
+  right: 23px;
+  font-size: 1.8rem;
+}
+
+#menu-link a:hover {
+  color: var(--Orange-color);
+}
+
+#menu-link.active {
+  display: flex;
+  top: 0;
+}
+
 .navbar {
   background-color: var(--Dark-color);
   display: flex;
@@ -102,6 +188,7 @@ main {
   height: 1.2rem;
   margin-right: 1.5rem;
   font-size: 1.5rem;
+  transition: 0.5s;
 }
 
 ul li {
@@ -483,6 +570,11 @@ input[type=email] {
   color: hsl(218, 20%, 39%);
   border-radius: 50%;
   font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.social-icons-footer ul li i:hover {
+  color: var(--Orange-color);
 }
 
 .line-foot {
@@ -663,6 +755,10 @@ h1::after {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   .logo {

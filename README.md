@@ -32,10 +32,10 @@
 
 
 
-# 📖 [Abdul's Portfolio] <a name="setting Up a linters"></a>
+# 📖 Abdul's Portfolio <a name="setting Up a linters"></a>
 
 
-**[Abdul's Portfolio]** Hello! My name is Abdul and this is my portfolio as a software developer. Here, you'll find some of the projects I've worked on that showcase my skills in various areas of development.
+**Abdul's Portfolio** Hello! My name is Abdul and this is my portfolio as a software developer. Here, you'll find some of the projects I've worked on that showcase my skills in various areas of development.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -66,6 +66,7 @@ added linters.yml
 - **[html.index]**
 - **[style.css]**
 - **[linters.yml]**
+- **[script.js]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,16 +114,12 @@ run this command  :
 
 ### Run tests
 
-To run tests, run the following command:
 
-t> comming soon
 
 
 
 
 ### Deployment
-
-t> comming soon   :
 
 ## Demo
 
