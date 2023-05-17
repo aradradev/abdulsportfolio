@@ -80,25 +80,38 @@
   display: flex;
   flex-direction: row;
   margin-right: 1.2rem;
+  border: 1px solid var(--White-color);
 }
 
-.buttons button {
+.buttons  a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   line-height: normal;
-
-  /* margin-right: 0.8rem; */
-  padding: 8px 12px;
+  color: var(--White-color);
+  background-color: var(--Orange-color);
+  margin-right: 0.8rem;
+  padding: 10px 12px;
   font-size: 15px;
+}
+
+.buttons a:hover{
+    color: var(--Orange-color);
+    background: var(--Text-color-main);
+    border: 1px solid var(--Text-color-main);
+}
+
+.buttons a:disabled{
+    background: hsl(15, 15%, 95%);
+    color: var(--Dark-color);
+}
+
+.buttons a:active{
+    color: hsl(15, 15%, 95%);
 }
 
 .buttons img {
   width: 20%;
-}
-
-.buttons .btn-container {
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 374px) {
@@ -137,47 +150,53 @@
     align-items: flex-start;
     justify-content: center;
   }
-
-  .buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    width: 800px;
-    max-height: 100vh;
-    max-width: 80%;
+    width: 950px;
+    min-height: 90vh;
+    min-width: 80%;
+    padding-top: 2rem;
   }
 
-  .container-desk {
+  .container-desk{
+    margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 0;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  /* .modal-title{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        justify-content: center;
-    } */
+  .modal-title {
+    display: grid;
+    grid-template-columns: 87% 68%;
+    justify-items: end;
+    justify-content: space-between;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
 
   .grid-template {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 0.9rem;
+    gap: 0.7rem;
     font-size: 15px;
   }
 
+  .modal .row-skills ul {
+    padding-right: 2rem;
+  }
+
+  .modal .row-skills li {
+    padding: 10px 7px;
+    margin-right: 0.3rem;
+  }
+
   .snap img {
-    width: 440px;
-    height: 341px;
+    width: 550px;
+    height: 370px;
   }
 }
