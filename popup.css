@@ -83,7 +83,7 @@
   border: 1px solid var(--White-color);
 }
 
-.buttons  a{
+.buttons a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,19 +95,19 @@
   font-size: 15px;
 }
 
-.buttons a:hover{
-    color: var(--Orange-color);
-    background: var(--Text-color-main);
-    border: 1px solid var(--Text-color-main);
+.buttons a:hover {
+  color: var(--Orange-color);
+  background: var(--Text-color-main);
+  border: 1px solid var(--Text-color-main);
 }
 
-.buttons a:disabled{
-    background: hsl(15, 15%, 95%);
-    color: var(--Dark-color);
+.buttons a:disabled {
+  background: hsl(15, 15%, 95%);
+  color: var(--Dark-color);
 }
 
-.buttons a:active{
-    color: hsl(15, 15%, 95%);
+.buttons a:active {
+  color: hsl(15, 15%, 95%);
 }
 
 .buttons img {
@@ -160,7 +160,7 @@
     padding-top: 2rem;
   }
 
-  .container-desk{
+  .container-desk {
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
