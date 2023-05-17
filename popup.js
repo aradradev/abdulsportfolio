@@ -2,37 +2,39 @@ const openModalButton = document.querySelectorAll('[data-modal-target]');
 const closeModalButton = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
-const seeProject1 = document.querySelector('#project-1');
+const windowPopup = document.querySelector('#project-1');
 
-const dataObj = [{
-  projectId: '1',
-  title: 'Profesional Art Printing Data',
-  technologies: ['HTML', 'Boostrap', 'Ruby on Rails'],
-  featuredImage: 'images/Snapshoot Portfolio.png',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-  linkLiveVersion: '#',
-  linkSource: '#',
-},
-{
-  projectId: '2',
-  title: 'Profesional Art Printing Data',
-  technologies: ['HTML', 'Boostrap', 'Ruby on Rails'],
-  featuredImage: 'images/Snapshoot Portfolio.png',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-  linkLiveVersion: '#',
-  linkSource: '#',
-},
-{
-  projectId: '3',
-  title: 'Profesional Art Printing Data',
-  technologies: ['HTML', 'Boostrap', 'Ruby on Rails'],
-  featuredImage: 'images/Snapshoot Portfolio.png',
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-  linkLiveVersion: '#',
-  linkSource: '#',
-  }];
+const dataObj = [
+  {
+    id: 1,
+    title: 'Multi Post Stories',
+    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    imageLink: 'images/Snapshoot Portfolio.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    id: 2,
+    title: 'Profesional Art Printing Data More',
+    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    imageLink: 'images/Snapshoot Portfolio.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: '#',
+    sourceLink: '#',
+  },
+  {
+    id: 3,
+    title: 'Data Dashboard Healthcare',
+    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    imageLink: 'images/Snapshoot Portfolio.png',
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    liveLink: '#',
+    sourceLink: '#',
+  },
+];
 
-seeProject1.addEventListener('click', () => {
+windowPopup.addEventListener('click', () => {
   const titleEl = document.querySelector('.txt-modal');
   const techEl = document.querySelector('.row-skills ul');
   const descEl = document.querySelector('.description-modal');
