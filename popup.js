@@ -12,7 +12,25 @@ const dataObj = [{
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
   linkLiveVersion: '#',
   linkSource: '#',
-}];
+},
+{
+  projectId: '2',
+  title: 'Profesional Art Printing Data',
+  technologies: ['HTML', 'Boostrap', 'Ruby on Rails'],
+  featuredImage: 'images/Snapshoot Portfolio.png',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  linkLiveVersion: '#',
+  linkSource: '#',
+},
+{
+  projectId: '3',
+  title: 'Profesional Art Printing Data',
+  technologies: ['HTML', 'Boostrap', 'Ruby on Rails'],
+  featuredImage: 'images/Snapshoot Portfolio.png',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+  linkLiveVersion: '#',
+  linkSource: '#',
+  }];
 
 seeProject1.addEventListener('click', () => {
   const titleEl = document.querySelector('.txt-modal');
