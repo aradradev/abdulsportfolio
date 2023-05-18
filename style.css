@@ -514,7 +514,7 @@ input[type=text],
 input[type=email] {
   border: none;
   outline: none;
-  min-width: 97%;
+  min-width: 100%;
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-size: 0.9em;
@@ -613,6 +613,15 @@ h1::after {
   width: 0.125em;
   background-color: var(--Orange-color);
   animation: typewriter var(--typewriter) steps(10) 1s forwards, blink 750ms steps(10) infinite;
+}
+
+div #error {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: red;
+  top: -35px;
+  transition: 0.5s;
 }
 
 @keyframes typewriter {
@@ -1063,9 +1072,9 @@ h1::after {
   }
 
   input[type=text] {
-    max-width: 20%;
+    max-width: 60%;
     padding: 0.5rem;
-    margin-right: 1rem;
+    margin-right: 15rem;
   }
 
   input[type=email] {
