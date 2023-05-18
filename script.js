@@ -10,7 +10,7 @@ hambuger.addEventListener('click', () => {
 
 // validation form
 const form = document.getElementById('form-input');
-const email = document.getElementsByName('email');
+const email = document.getElementById('email');
 
 const errorMsg = document.querySelector('.error');
 const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;

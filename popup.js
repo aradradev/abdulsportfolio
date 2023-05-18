@@ -37,9 +37,9 @@ overlay.addEventListener('click', () => {
 
 const projects = [
   {
+    id: 1,
     projectName: 'Multi-Post Stories',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatum consequatur quae recusandae harum minus illum nisi reprehenderit maxime, modi, quam, nulla cumque! Incidunt, impedit doloribus?  a debitis quidem earum eum quibusdam quia, possimus soluta maiores eveniet quod et officia? Iusto minus provident veniam.',
-    featuredImage: 'images/Snapshoot Portfolio.svg',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     image: './images/Snapshoot Portfolio.png',
     live: '#',
@@ -69,7 +69,7 @@ const generalHTML = (project) => `
     <div class="grid">
       <div class="modal-text">
         <p class="mobile description-modal">${project.description}</p>
-        <p class="hidden description-modal">${project.description}<br/> <br/> ${project.description}</p>
+        <p class="hidden description-modal">${project.description} <br/><br/>${project.description} </p>
       </div>
       <div class="buttons">
         <a href="${project.live}">See Live <img src="images/Icon.png" alt="icon" class="live"></a>
@@ -91,8 +91,6 @@ projects.forEach((project) => {
   const button = document.createElement('button');
   button.innerText = project.projectName;
   button.addEventListener('click', () => {
-    const modalContent = modal.querySelector(`.modal-content[data-projectId="${project.projectId}"]`);
-    const modalImage = modalContent.querySelector('#modal-Image');
     modalImage.src = project.image;
     modal.querySelector('.modal-title').innerText = project.projectName;
     modal.querySelector('.modal-description').innerText = project.description;
@@ -106,35 +104,7 @@ projects.forEach((project) => {
     });
     modal.style.display = 'block';
   });
-  // Add button to the page
-  document.body.appendChild(button);
 });
-
-const modalImages = modal.querySelectorAll('[data-project-id]');
-
-// Iterate over all modal images and add click event listener
-modalImages.forEach((image) => {
-  image.addEventListener('click', () => {
-    // Get the project id from the data attribute
-    const { projectId } = image.dataset;
-    // Find the project in the projects array with the matching id
-    const project = projects.find((project) => project.id === projectId);
-    // Update modal content with project information
-    modalImage.src = project.image;
-    modal.querySelector('.modal-title').innerText = project.projectName;
-    modal.querySelector('.modal-description').innerText = project.description;
-    modal.querySelector('.modal-live').href = project.live;
-    modal.querySelector('.modal-source').href = project.source;
-    modal.querySelector('.tech-list').innerHTML = '';
-    // Iterate over the technologies in the project and add to the modal tech list
-    project.technologies.forEach((technology) => {
-      const techListItem = document.createElement('li');
-      techListItem.innerText = technology;
-      modal.querySelector('.tech-list').appendChild(techListItem);
-    });
-  });
-});
-
 const closeButtons = document.querySelectorAll('.close-btn');
 
 closeButtons.forEach((button) => {
