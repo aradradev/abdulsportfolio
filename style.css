@@ -620,6 +620,7 @@ h1::after {
   font-size: 16px;
   font-weight: 400;
   color: red;
+  top: -35px;
 }
 
 @keyframes typewriter {
