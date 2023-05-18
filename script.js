@@ -10,22 +10,25 @@ hambuger.addEventListener('click', () => {
 
 // validation form
 const form = document.getElementById('form-input');
-const email = document.getElementById('email');
-
-const errorMsg = document.querySelector('.error');
+const email = document.getElementById('emailfield');
+const errorMsg = document.querySelector('#error');
 const regex = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g;
 
 function isValid(e) {
   e.preventDefault();
-  // cheking email value if it is the same as the regex pattern
+
   if (regex.test(email.value)) {
     form.submit();
     form.reset();
   } else {
-    errorMsg.innerText = 'The email should be in lower case';
+    errorMsg.innerText = 'The email should be in a valid format.';
   }
 }
 
 form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    errorMsg.textContent = 'Your email should be in lowercase.';
+  }
   isValid(e);
 });
