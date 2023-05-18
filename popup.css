@@ -1,6 +1,4 @@
-/* *, *::after, *::before {
-    box-sizing: border-box;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Meera+Inimai&family=Poppins&family=Roboto:wght@700&display=swap');
 
 .modal {
   color: #344563;
@@ -18,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: 10px;
   justify-content: center;
   overflow-y: scroll;
 }
@@ -28,17 +26,18 @@
 }
 
 .modal-title {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 90% 54%;
   align-items: center;
-  margin-top: 7rem;
-  padding-bottom: 2rem;
+  justify-content: space-between;
+  justify-items: start;
 }
 
 .modal-title h2 {
-  font-size: 25px;
+  font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .modal-title .close-btn {
@@ -79,7 +78,8 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  margin-right: 1.2rem;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--White-color);
 }
 
@@ -91,7 +91,7 @@
   color: var(--White-color);
   background-color: var(--Orange-color);
   margin-right: 0.8rem;
-  padding: 10px 12px;
+  padding: 14px 28px;
   font-size: 15px;
 }
 
@@ -155,7 +155,7 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 950px;
-    min-height: 90vh;
+    min-height: 60vh;
     min-width: 80%;
     padding-top: 2rem;
   }
@@ -166,15 +166,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 15px;
   }
 
   .modal-title {
     display: grid;
-    grid-template-columns: 87% 68%;
+    grid-template-columns: 88% 52%;
     justify-items: end;
-    justify-content: space-between;
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 0;
+  }
+
+  .text-container-row {
+    margin-bottom: 0;
   }
 
   .grid-template {
@@ -198,5 +202,10 @@
   .snap img {
     width: 550px;
     height: 370px;
+  }
+
+  .buttons {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }

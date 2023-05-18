@@ -106,39 +106,7 @@
                 <!-- ############ POPUP WINDOW START HERE -->
 
                 <div class="modal" id="modal">
-                    <div class="text-container-row">
-                        
-                        <div class="container-desk">
-                            <div class="modal-title">
-                                <h2 class="mobile txt-modal">Multi-Post Stories</h2>
-                                <h2 class="hidden txt-modal">Keeping track of hundreds  of components website</h2>
-                                <button data-close-button class="close-btn">&times;</button>
-                            </div>
-                            <div class="row-skills">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>Bootstrap</li>
-                                    <li>Ruby on Rails</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="grid-template">
-                            <a class="snap" href="#"><img src="images/Snapshoot Portfolio.png" alt="image popup"></a>
-                        <div class="grid">
-                            <div class="modal-text">
-                                <p class="mobile description-modal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
-
-                                <p class="hidden description-modal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. <br> <br>
-
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
-                            </div>
-                            <div class="buttons">
-                                <a href="#">See Live <img src="images/Icon.png" alt="icon" class="live"></a>
-                                <a href="#">See Source <img src="images/Icon -GitHub.png" alt="icon github" class="source"></a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                    <!--  -->
                 </div>
                 <div id="overlay"></div>
 
@@ -163,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
+                        <button id="data-projectId" data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                     <div class="projects-2 active" id="project-2">
                         <div class="cards-container-hidden">
@@ -433,7 +401,7 @@
                 <div class="form-title">
                     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                 </div>
-                <form action="https://formspree.io/f/mbjebzjn" method="POST">
+                <form action="https://formspree.io/f/mbjebzjn" method="POST" id="form-input">
                     <div class="form-input">
                         <div class="fullname hidden">
                             <label for="fname"></label>
@@ -460,7 +428,7 @@
                         <label for="comment"></label>
                         <textarea name="message" maxlength="500" required id="comment"  cols="30" rows="5" placeholder="Write me something..."></textarea>
                     </div>
-                    <button type="submit" class="btn-form btn-form-desktop" >Get in touch</button>
+                    <button type="button" class="btn-form btn-form-desktop" >Get in touch</button>
                 </form>
             </section>
             <!-- FORM SECTION END HERE -->
