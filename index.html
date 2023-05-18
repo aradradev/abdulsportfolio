@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"> 
 </head>
 <body>
@@ -96,16 +97,25 @@
                                         <li>Ruby</li>
                                     </ul>
                                 </div>
-                                <button class="btn-container" type="submit">See project</button>
+                                <button data-modal-target="#modal" class="btn-container" type="submit">See project</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- ############ POPUP WINDOW START HERE -->
+
+                <div class="modal" id="modal">
+                    <!--  -->
+                </div>
+                <div id="overlay"></div>
+
+                <!-- ############ POPUP WINDOW END HERE -->
+
                 <!-- SECTION DESKTOP FOR PROJECTS GRID START HERE -->
 
                 <div class="project-container hidden">
-                    <div class="projects-1 active">
+                    <div class="projects-1 active" id="project-1">
                         <div class="cards-container-hidden">
                             <div class="card-container">
                                 <h3 class="title-card">Profesional Art Printing Data</h3>
@@ -121,9 +131,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
-                    <div class="projects-2 active">
+                    <div class="projects-2 active" id="project-2">
                         <div class="cards-container-hidden">
                             <div class="card-container">
                                 <h3 class="title-card">Data Dashboard Healthcare</h3>
@@ -139,10 +149,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                     
-                    <div class="projects-3 active">
+                    <div class="projects-3 active" id="project-3">
                         <div class="cards-container-hidden">
                             <div class="card-container">
                                 <h3 class="title-card">Website Portfolio</h3>
@@ -158,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                     <div class="projects-1 active">
                         <div class="cards-container-hidden">
@@ -176,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                     <div class="projects-2 active">
                         <div class="cards-container-hidden">
@@ -194,7 +204,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                     <div class="projects-3 active">
                         <div class="cards-container-hidden">
@@ -212,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-project" type="submit">See project</button>
+                        <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
                     </div>
                 </div>
 
@@ -236,7 +246,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                     <div class="cards-container">
@@ -252,7 +262,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                     <div class="cards-container">
@@ -268,7 +278,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                     <div class="cards-container">
@@ -284,7 +294,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                     <div class="cards-container">
@@ -300,7 +310,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                     <div class="cards-container">
@@ -316,7 +326,7 @@
                                     <li>Ruby</li>
                                 </ul>
                             </div>
-                            <button class="btn" type="submit">See project</button>
+                            <button data-modal-target="#modal" class="btn" type="submit">See project</button>
                         </div>
                     </div>
                 </div>
@@ -391,7 +401,7 @@
                 <div class="form-title">
                     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                 </div>
-                <form action="https://formspree.io/f/mbjebzjn" method="POST">
+                <form action="https://formspree.io/f/mbjebzjn" method="POST" id="form-input">
                     <div class="form-input">
                         <div class="fullname hidden">
                             <label for="fname"></label>
@@ -418,7 +428,7 @@
                         <label for="comment"></label>
                         <textarea name="message" maxlength="500" required id="comment"  cols="30" rows="5" placeholder="Write me something..."></textarea>
                     </div>
-                    <button type="submit" class="btn-form btn-form-desktop" >Get in touch</button>
+                    <button type="button" class="btn-form btn-form-desktop" >Get in touch</button>
                 </form>
             </section>
             <!-- FORM SECTION END HERE -->
@@ -440,5 +450,6 @@
 
     </main>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 </html>

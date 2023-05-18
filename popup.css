@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500&family=Meera+Inimai&family=Poppins&family=Roboto:wght@700&display=swap');
+
+.modal {
+  color: #344563;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  z-index: 10;
+  width: 315px;
+  max-height: 85vh;
+  min-width: 36%;
+  background-color: #fff;
+  transition: 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+  display: grid;
+  grid-template-columns: 90% 54%;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: start;
+}
+
+.modal-title h2 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modal-title .close-btn {
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: hsl(212, 16%, 48%);
+  cursor: pointer;
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+
+.modal-text {
+  padding: 1rem 0;
+  font-size: 16px;
+}
+
+#overlay {
+  opacity: 0;
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.snap img {
+  width: 311px;
+  height: 220px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--White-color);
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: normal;
+  color: var(--White-color);
+  background-color: var(--Orange-color);
+  margin-right: 0.8rem;
+  padding: 14px 28px;
+  font-size: 15px;
+}
+
+.buttons a:hover {
+  color: var(--Orange-color);
+  background: var(--Text-color-main);
+  border: 1px solid var(--Text-color-main);
+}
+
+.buttons a:disabled {
+  background: hsl(15, 15%, 95%);
+  color: var(--Dark-color);
+}
+
+.buttons a:active {
+  color: hsl(15, 15%, 95%);
+}
+
+.buttons img {
+  width: 20%;
+}
+
+@media screen and (max-width: 374px) {
+  .modal .row-skills ul {
+    padding: 0.8rem 0;
+  }
+
+  .modal .row-skills li {
+    padding: 10px 7px;
+    margin-right: 0.3rem;
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    overflow-x: hidden;
+    width: 300px;
+    min-width: 50%;
+  }
+
+  .modal-title h2 {
+    font-size: 22px;
+  }
+
+  .snap img {
+    width: 292px;
+  }
+
+  .modal-text {
+    font-size: 14px;
+  }
+
+  .buttons {
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 950px;
+    min-height: 60vh;
+    min-width: 80%;
+    padding-top: 2rem;
+  }
+
+  .container-desk {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+
+  .modal-title {
+    display: grid;
+    grid-template-columns: 88% 52%;
+    justify-items: end;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-container-row {
+    margin-bottom: 0;
+  }
+
+  .grid-template {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 15px;
+  }
+
+  .modal .row-skills ul {
+    padding-right: 2rem;
+  }
+
+  .modal .row-skills li {
+    padding: 10px 7px;
+    margin-right: 0.3rem;
+  }
+
+  .snap img {
+    width: 550px;
+    height: 370px;
+  }
+
+  .buttons {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
