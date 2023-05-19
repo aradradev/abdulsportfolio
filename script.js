@@ -27,7 +27,7 @@ function saveData() {
   localStorage.setItem('formInputData', JSON.stringify(formData));
 }
 
-form.addEventListener('submit', saveData);
+form.addEventListener('input', saveData);
 
 function isValid(e) {
   e.preventDefault();
