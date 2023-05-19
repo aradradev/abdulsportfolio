@@ -207,8 +207,6 @@ I would like to thank Microverse team for the opportunity
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
 [MIT license](https://github.com/aradradev/Hello-microverse/blob/add-license-1/Licence) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
