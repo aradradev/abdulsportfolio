@@ -46,3 +46,11 @@ form.addEventListener('submit', (e) => {
 });
 
 // Update localStorage get data
+window.addEventListener('load', () => {
+  const savedData = JSON.parse(localStorage.getItem('formInputData'));
+  if (savedData) {
+    email.value = savedData.email;
+    fullName.value = savedData.fullname;
+    message.value = savedData.message;
+  }
+});
