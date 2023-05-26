@@ -110,6 +110,6 @@ const closeButtons = document.querySelectorAll('.close-btn');
 closeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal');
-    closestModal(modal);
+    closeModal(modal);
   });
 });
