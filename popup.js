@@ -38,12 +38,12 @@ overlay.addEventListener('click', () => {
 const projects = [
   {
     id: 1,
-    projectName: 'Multi-Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    projectName: 'Easy-Bank and TidCoin',
+    description: 'EasyBank is a revolutionary mobile application designed to empower individuals worldwide, regardless of their access to traditional banking services. In a world where not everyone has access to a bank account or a credit card, EasyBank aims to bridge the financial gap by leveraging the ubiquity of mobile phones.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     image: './images/Snapshoot Portfolio.png',
-    live: '#',
-    source: '#',
+    live: 'https://easy-bank-tc.vercel.app/',
+    source: 'https://github.com/aradradev/easyBankTC',
   },
 ];
 
@@ -110,6 +110,6 @@ const closeButtons = document.querySelectorAll('.close-btn');
 closeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal');
-    closeModal(modal);
+    closestModal(modal);
   });
 });
