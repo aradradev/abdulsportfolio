@@ -73,7 +73,7 @@ const generalHTML = (project) => `
       </div>
       <div class="buttons">
         <a href="${project.live}">See Live <img src="images/Icon.png" alt="icon" class="live"></a>
-        <a href="${project.source}">See Live <img src="images/Icon.png" alt="icon" class="live"></a>
+        <a href="${project.source}">See Source <img src="images/Icon.png" alt="icon" class="live"></a>
       </div>
     </div>
   </div>
