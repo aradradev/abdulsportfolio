@@ -1,3 +1,96 @@
+// JavaScript code for dynamic project cards
+
+// Projects data
+const projects = [
+  {
+    id: 1,
+    projectName: 'Professional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    image: 'images/Img Placeholder (1).png',
+  },
+  {
+    id: 2,
+    projectName: 'Professional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    image: 'images/Img Placeholder (1).png',
+  },
+  {
+    id: 3,
+    projectName: 'Professional Art Printing Data',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    image: 'images/Img Placeholder (1).png',
+  },
+];
+
+// Function to generate the desktop project cards dynamically
+function generateDesktopProjectCards() {
+  const projectContainer = document.querySelector('.project-container');
+
+  projects.forEach((project, index) => {
+    const projectCard = document.createElement('div');
+    projectCard.classList.add(`projects-${index + 1}`, 'active');
+    projectCard.setAttribute('id', `project-${index + 1}`);
+
+    const cardContent = `
+      <div class="cards-container-hidden">
+        <div class="card-container">
+          <h3 class="title-card">${project.projectName}</h3>
+          <div class="desc">
+            <p>${project.description}</p>
+          </div>
+          <div class="row-card-skills">
+            <ul>
+              ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button data-modal-target="#modal" class="btn-project" type="submit">See project</button>
+    `;
+
+    projectCard.innerHTML = cardContent;
+    projectContainer.appendChild(projectCard);
+  });
+}
+
+// Function to generate the mobile project cards dynamically
+function generateMobileProjectCards() {
+  const projectContainer = document.querySelector('.cards-project.mobile');
+
+  projects.forEach((project) => {
+    const projectCard = document.createElement('div');
+    projectCard.classList.add('cards-container');
+
+    const cardContent = `
+      <div class="card-container">
+        <h3 class="title-card">${project.projectName}</h3>
+        <div class="desc">
+          <p>${project.description}</p>
+        </div>
+        <div class="row-card-skills">
+          <ul>
+            ${project.technologies.map((tech) => `<li>${tech}</li>`).join('')}
+          </ul>
+        </div>
+        <button data-modal-target="#modal" class="btn" type="submit">See project</button>
+      </div>
+    `;
+
+    projectCard.innerHTML = cardContent;
+    projectContainer.appendChild(projectCard);
+  });
+}
+
+// Call the functions to generate the project cards
+generateDesktopProjectCards();
+generateMobileProjectCards();
+
 const hambuger = document.getElementById('hamburger');
 const navMenu = document.getElementById('menu-link');
 const closeBtn = document.getElementById('close-btn');
